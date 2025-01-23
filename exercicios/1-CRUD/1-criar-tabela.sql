@@ -1,2 +1,3 @@
 -- Crie uma nova tabela no banco de dados
-exemplo de moficicacao
+SELECT *
+from tracks;
