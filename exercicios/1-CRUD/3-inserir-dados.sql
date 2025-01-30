@@ -9,3 +9,8 @@ VALUES
 INSERT INTO salario_classe_oficial(salario, nivel)
 VALUES
 (10000, 'gerente');
+
+-- INSERINDO DADOS NA TABELA USUÁRIOS MOBILLS
+INSERT INTO usuarios_mobills(id,DataCadastro,DataCompra,status)
+VALUES
+(6,'2020/03/02','2021/04/02','premium');
