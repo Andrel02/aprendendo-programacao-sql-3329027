@@ -1,4 +1,4 @@
-CREATE TABLE salario_classe(
+CREATE TABLE salario_classe_oficial(
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 nivel TEXT,
-salario INTEGER);
+salario varchar(50));
