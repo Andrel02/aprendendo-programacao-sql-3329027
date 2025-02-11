@@ -4,10 +4,9 @@ SELECT DISTINCT
 Country as pais,
 State as estado_sigla,
 CASE
-    WHEN State = 'SP' THEN 'São Paulo'
-    WHEN State = 'RJ' THEN 'Rio de Janeiro'
-END AS estado
-FROM
-customers
-WHERE 
-Country LIKE 'Brazil';
+    WHEN state = 'SP' THEN 'São Paulo'
+    WHEN state = 'RJ' THEN 'Rio de Janeiro'
+    WHEN state = 'DF' THEN 'Distrito Federal'
+END as estado
+FROM customers
+WHERE Country = 'Brazil';
