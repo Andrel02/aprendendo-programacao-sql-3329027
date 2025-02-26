@@ -1,0 +1,19 @@
+SELECT DISTINCT
+CustomerId as id,
+BillingAddress as endereco_cobranca,
+BillingCity as cidade_cobranca,
+BillingState as estado_cobranca,
+BillingCountry as pais_cobranca,
+InvoiceDate as data,
+Total as divida,
+CASE 
+  WHEN DATE(InvoiceDate) >= '2011-02-01' 
+  AND DATE(InvoiceDate) <= '2011-02-28' 
+  THEN 'caloteiro'
+  WHEN DATE(InvoiceDate) <'2011-02-01' 
+  THEN 'Bom pagador'
+  WHEN DATE(invoiceDate) > '2011-02-28'
+  THEN 'Merece ir preso'
+END as situacao
+FROM invoices
+WHERE BillingCountry = 'Brazil';

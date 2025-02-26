@@ -1,3 +1,0 @@
-SELECT sum(Receita) as soma_receita
-FROM users_blog
-where status = 'premium' and Artigo = 'Milhas'
