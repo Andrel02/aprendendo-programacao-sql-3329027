@@ -1,11 +1,11 @@
 SELECT DISTINCT
-user_id as usuarioId,
-Receita as dinheiro,
-Status,
+user_id as id,
+status,
+Receita,
+Artigo,
 CASE
-    WHEN Receita > 20 AND Receita < 30 THEN 'Teste'
-    WHEN Receita >= 30 THEN 'Cú'
-    WHEN Receita <= 20 THEN 'Teste2'
-END as Status_oficial
+    WHEN Receita >=20 THEN 'Cú'
+    ELSE 'dinheiro'
+END AS status_receita
 FROM users_blog
-WHERE status = 'premium';
+WHERE Artigo = 'Sair das dívidas';
